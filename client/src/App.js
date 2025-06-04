@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import User from './getuser/User.jsx';
 
 function App() {
   return (
     <div className="App">
-      <p>hello camilo!</p>
+      <User />
     </div>
   );
 }
