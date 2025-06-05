@@ -1,11 +1,12 @@
 import React from 'react'
 import './User.css'
 
+
 const User = () => {
   return (
     <div className='userTable'>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Adicionar Usuário
+            Adicionar Usuário <i class="fa-solid fa-user-plus"></i>
         </button>
 
         <table className='table table-bordered'>
@@ -21,12 +22,19 @@ const User = () => {
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>Moises</td>
-                    <td>moises@gmail.com</td>
-                    <td>Brasil</td>
-                    <td>Update | Delete</td>
+                    <td>joao</td>
+                    <td>joao@email.com</td>
+                    <td>brasil</td>
+                    <td className='actionButtons'>
+                        <button type="button" class="btn btn-info">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </td>
                 </tr>
-            </tbody>
+            </tbody>    
         </table>
 
     </div>
