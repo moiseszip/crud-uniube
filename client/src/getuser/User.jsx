@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./User.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const User = () => {
   const [users, setUsers] = useState([]);
@@ -18,14 +19,13 @@ const User = () => {
 
   return (
     <div className="userTable">
-      <button
+      <Link
+        to="/add"
         type="button"
         class="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
       >
         Adicionar Usuário <i class="fa-solid fa-user-plus"></i>
-      </button>
+      </Link>
 
       <table className="table table-bordered">
         <thead>
