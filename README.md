@@ -112,4 +112,4 @@ crud-uniube/
 ```
 
 ## 👨‍💻 Autor
-Desenvolvido por Moisés – Projeto da disciplina de Linguagem de Programação para Internet 2 (Uniube).
+Desenvolvido por Moisés – Projeto da disciplina de Linguagem de Programação para Internet (Uniube).
