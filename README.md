@@ -16,16 +16,17 @@ Este sistema permite o administrador cadastrar, visualizar, atualizar e excluir 
 - ReactJS (Create React App)
 - React Router DOM
 - Axios
-- CSS puro
+- CSS
+- Bootstrap
 - React Hot Toast
 
 ### Back-end
 - Node.js
 - Express
 - Mongoose
-- Multer (upload de imagem)
-- dotenv
-- cors
+- Multer
+- Dotenv
+- Cors
 
 ### Banco de Dados
 - MongoDB Compass
@@ -109,6 +110,25 @@ crud-uniube/
 │   ├── model/
 │   ├── routes/
 │   └── uploads/
+```
+
+## Banco de Dados
+
+O projeto utiliza MongoDB com Mongoose.
+
+- Banco: `mern`
+- Coleção: `users`
+- Campos: `name`, `email`, `address`, `image` (URL)
+- Conexão definida no arquivo `.env`
+
+Exemplo de documento salvo:
+```json
+{
+  "name": "Fulano da Silva",
+  "email": "fulano@email.com",
+  "address": "Rua Brasil 123"
+  "image": (arquivo de imagem)
+}
 ```
 
 ## 👨‍💻 Autor
