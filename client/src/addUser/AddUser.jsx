@@ -33,10 +33,10 @@ const AddUser = () => {
 
   return (
     <div className="addUser">
-      <Link type="button" className="btn btn-secondary">
+      <Link type="button" to={"/"} className="btn btn-secondary">
         <i className="fa-solid fa-backward"></i> Voltar
       </Link>
-      <h3>Adicionar Novo Usuário</h3>
+      <h3>Adicionar Novo Morador</h3>
       <form className="addUserForm" onSubmit={submitForm}>
         <div className="inputGroup">
           <label htmlFor="name">Nome:</label>

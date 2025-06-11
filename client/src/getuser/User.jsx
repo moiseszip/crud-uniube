@@ -34,14 +34,17 @@ const User = () => {
 
   return (
     <div className="userTable">
-      <Link to="/add" type="button" class="btn btn-primary">
-        Adicionar Usuário <i class="fa-solid fa-user-plus"></i>
-      </Link>
+      <div className="header">
+        <Link to="/add" type="button" class="btn btn-primary">
+          Adicionar Morador <i class="fa-solid fa-user-plus"></i>
+        </Link>
 
+        <h2>Condomínio Uniube <i class="fa-solid fa-building"></i></h2>
+      </div>
       {users.length === 0 ? (
         <div className="noData">
-          <h3>Nenhum usuário encontrado</h3>
-          <p>Adicione um usuário para começar</p>
+          <h3>Nenhum morador encontrado</h3>
+          <p>Adicione um morador para começar</p>
         </div>
       ) : (
         <table className="table table-bordered">
@@ -63,7 +66,7 @@ const User = () => {
                   <td>{user.email}</td>
                   <td>{user.address}</td>
                   <td className="actionButtons">
-                  <Link
+                    <Link
                       to={`/update/` + user._id}
                       type="button"
                       class="btn btn-info"

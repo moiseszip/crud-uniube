@@ -7,11 +7,11 @@ export const create = async(req, res) => {
 
         const userExist = await User.findOne({email});
         if (userExist) {
-            return res.status(400).json({message: "Usuário já existe"});
+            return res.status(400).json({message: "Morador já existe"});
         }
         const savedData = await newUser.save();
         // res.status(200).json(savedData);
-        res.status(200).json({message:"Usuário criado com sucesso"});
+        res.status(200).json({message:"Morador criado com sucesso"});
     } catch (error) {
         res.status(500).json({errorMessage:error.message});
     }
@@ -21,7 +21,7 @@ export const getAllUsers = async(req, res) => {
     try {
         const userData = await User.find();
         if(!userData || userData.length === 0) {
-            return res.status(404).json({message: "Nenhum usuário encontrado"});
+            return res.status(404).json({message: "Nenhum morador encontrado"});
         }
         res.status(200).json(userData);
     } catch (error) {
@@ -34,7 +34,7 @@ export const getUserById = async(req, res) => {
         const id = req.params.id;
         const userExist = await User.findById(id);
         if(!userExist) {
-            return res.status(404).json({message: "Usuário não encontrado"});
+            return res.status(404).json({message: "Morador não encontrado"});
         }
         res.status(200).json(userExist);
     } catch (error) {
@@ -47,12 +47,12 @@ export const update = async(req, res) => {
         const id = req.params.id;
         const userExist = await User.findById(id);
         if(!userExist) {
-            return res.status(404).json({message: "Usuário não encontrado"});
+            return res.status(404).json({message: "Morador não encontrado"});
         }
         const updatedData = await User.findByIdAndUpdate(id, req.body, {
             new: true
         });
-        res.status(200).json({message: "Usuário atualizado com sucesso"});
+        res.status(200).json({message: "Morador atualizado com sucesso"});
     } catch (error) {
         res.status(500).json({errorMessage:error.message});
     }
@@ -63,10 +63,10 @@ export const deleteUser = async(req, res) => {
         const id = req.params.id;
         const userExist = await User.findById(id);
         if(!userExist) {
-            return res.status(404).json({message: "Usuário não encontrado"});
+            return res.status(404).json({message: "Morador não encontrado"});
         }
         await User.findByIdAndDelete(id);
-        res.status(200).json({message: "Usuário deletado com sucesso"});
+        res.status(200).json({message: "Morador deletado com sucesso"});
     } catch (error) {
         res.status(500).json({errorMessage:error.message});
     }
