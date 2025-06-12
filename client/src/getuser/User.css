@@ -54,6 +54,13 @@
     color: blue;
 }
 
+.footer {
+  color: blue;
+  font-size: 14px;
+  margin-top: 20px;
+  font-weight: semibold;
+}
+
 @media (max-width: 600px) {
   .userTable {
     width: 95%;

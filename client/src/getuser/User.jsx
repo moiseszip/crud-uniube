@@ -101,6 +101,7 @@ const User = () => {
           </tbody>
         </table>
       )}
+      <p className="footer">Desenvolvido por Moisés Melo (5162019) e Vitor Ferreira (5162084)</p>
     </div>
   );
 };
