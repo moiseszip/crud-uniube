@@ -1,5 +1,7 @@
 # CRUD de Usuários - Uniube
 
+Desenvolvido por Moisés Melo (5162019) e Vitor Ferreira (5162084) – Projeto da disciplina de Linguagem de Programação para Internet (Uniube).
+
 Projeto completo de CRUD (Create, Read, Update, Delete) utilizando **React** no front-end, **Node.js + Express** no back-end e **MongoDB** como banco de dados.
 
 ---
@@ -131,5 +133,5 @@ Exemplo de documento salvo:
 }
 ```
 
-## 👨‍💻 Autor
-Desenvolvido por Moisés – Projeto da disciplina de Linguagem de Programação para Internet (Uniube).
+## 👨‍💻 Autores
+Desenvolvido por Moisés Melo (5162019) e Vitor Ferreira (5162084) – Projeto da disciplina de Linguagem de Programação para Internet (Uniube).
